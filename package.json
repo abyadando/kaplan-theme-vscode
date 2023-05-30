@@ -1,8 +1,8 @@
 {
   "name": "kaplan-dark-theme",
   "displayName": "Kaplan Dark",
-  "description": "Kaplan Dark is a visually striking theme designed for Visual Studio Code, aimed at enhancing your coding experience. With its dark gray and yellow color palette, Kaplan Dark creates a captivating atmosphere that is both elegant and modern.",
-  "version": "0.0.1",
+  "description": "Kaplan Dark is a visually striking theme designed for Visual Studio Code, aimed at enhancing your coding experience. Kaplan Dark creates a captivating atmosphere that is both elegant and modern.",
+  "version": "0.1.0",
   "author": {
     "name": "abyadando"
   },
@@ -14,9 +14,14 @@
     "type": "git",
     "url": "https://github.com/abyadando/kaplan-theme-vscode"
   },
-  "icon": "k.png",
+  "icon": "kaplan.png",
+  "bugs": {
+    "url": "https://github.com/abyadando/kaplan-theme-vscode/issues"
+  },
+  "license": "MIT",
   "categories": [
-    "Themes"
+    "Themes",
+    "Other"
   ],
   "keywords": [
     "kaplan",
@@ -25,12 +30,21 @@
     "kaplan dark",
     "vscode dark theme"
   ],
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
   "contributes": {
     "themes": [
       {
         "label": "Kaplan Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Kaplan-color-theme.json"
+        "path": "./themes/kaplan-dark.json"
+      },
+      {
+        "label": "Kaplan Dark Muted",
+        "uiTheme": "vs-dark",
+        "path": "./themes/kaplan-dark-muted.json"
       }
     ]
   }
